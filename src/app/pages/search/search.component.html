@@ -1,0 +1,11 @@
+<div class="rk-portfolio__items">
+    <a *ngFor="let producto of _productosService.productosFiltrado" [routerLink]="['/item',producto.cod]" class="animated fadeIn rk-item rk-size-12 rk-tosize-6 rk-landscape">
+        <!--class="animated fadeIn rk-item rk-item--flex item-1 rk-size-12 rk-tosize-6 rk-landscape "-->
+        <!--class="animated fadeIn rk-item ae-masonry__item"-->
+        <img src="assets/productos/{{producto.url}}" alt="">
+        <div class="item-meta">
+            <h2>{{producto.titulo}}</h2>
+            <p>{{producto.categoria}}</p>
+        </div>
+    </a>
+</div>
